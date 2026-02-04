@@ -3,11 +3,11 @@ import Image from "next/image"
 import Header from "./_components/header"
 import { Button } from "./_components/ui/button"
 import { SearchIcon } from "lucide-react"
-import { Card, CardContent } from "./_components/ui/card"
-import { Avatar, AvatarImage } from "./_components/ui/avatar"
-import { Badge } from "./_components/ui/badge"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./_components/barbershop-item"
+import { quickSearchList } from "./_constants/search"
+import BookingItem from "./_components/bookin-item"
+import { Card, CardContent } from "./_components/ui/card"
 
 const Home = async () => {
   //chamando o banco de dados
@@ -38,65 +38,17 @@ const Home = async () => {
 
         {/*Busca Rápida*/}
         <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
-          <Button className="gap-2" variant="secondary">
-            <Image
-              src="/cabelo.svg"
-              width={16}
-              height={16}
-              alt="Corte de Cabelo"
-            />
-            Cabelo
-          </Button>
-
-          <Button className="gap-2" variant="secondary">
-            <Image
-              src="/barba.svg"
-              width={16}
-              height={16}
-              alt="Corte de Cabelo"
-            />
-            Barba
-          </Button>
-
-          <Button className="gap-2" variant="secondary">
-            <Image
-              src="/acabamento.svg"
-              width={16}
-              height={16}
-              alt="Corte de Cabelo"
-            />
-            Acabamento
-          </Button>
-
-          <Button className="gap-2" variant="secondary">
-            <Image
-              src="/sobrancelha.svg"
-              width={16}
-              height={16}
-              alt="Corte de Cabelo"
-            />
-            Sobrancelha
-          </Button>
-
-          <Button className="gap-2" variant="secondary">
-            <Image
-              src="/hidratacao.svg"
-              width={16}
-              height={16}
-              alt="Corte de Cabelo"
-            />
-            Hidratação
-          </Button>
-
-          <Button className="gap-2" variant="secondary">
-            <Image
-              src="/massagem.svg"
-              width={16}
-              height={16}
-              alt="Corte de Cabelo"
-            />
-            Massagem
-          </Button>
+          {quickSearchList.map((item) => (
+            <Button key={item.title} className="gap-2" variant="secondary">
+              <Image
+                src={item.imageUrl}
+                width={16}
+                height={16}
+                alt={item.title}
+              />
+              {item.title}
+            </Button>
+          ))}
         </div>
 
         {/*Banner*/}
@@ -110,34 +62,9 @@ const Home = async () => {
         </div>
 
         {/*Agendamentos*/}
-        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
-          Agendamentos
-        </h2>
+        <BookingItem />
 
-        <Card>
-          <CardContent className="flex justify-between p-0">
-            {/*ESQUERDA*/}
-            <div className="flex flex-col gap-2 py-5 pl-5">
-              <Badge className="w-fit"> Confirmado </Badge>
-              <h3 className="font-semibold">Corte de cabelo</h3>
-
-              <div className="flex items-center gap-2">
-                <Avatar className="h-6 w-6">
-                  <AvatarImage src="https://github.com/shadcn.png" />
-                </Avatar>
-                <p className="text-sm">Barbearia FWS </p>
-              </div>
-            </div>
-
-            {/*DIREITA*/}
-            <div className="flex flex-col items-center justify-center border-l-2 border-solid px-5">
-              <p className="text-sm">Fevereiro</p>
-              <p className="text-2xl">04</p>
-              <p className="text-sm">09:30</p>
-            </div>
-          </CardContent>
-        </Card>
-
+        {/*Recomendados*/}
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Recomendados
         </h2>

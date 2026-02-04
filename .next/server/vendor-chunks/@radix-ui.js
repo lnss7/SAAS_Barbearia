@@ -91,6 +91,50 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "(rsc)/./node_modules/@radix-ui/react-avatar/dist/index.mjs":
+/*!************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-avatar/dist/index.mjs ***!
+  \************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Avatar: () => (/* binding */ e0),
+/* harmony export */   AvatarFallback: () => (/* binding */ e1),
+/* harmony export */   AvatarImage: () => (/* binding */ e2),
+/* harmony export */   Fallback: () => (/* binding */ e3),
+/* harmony export */   Image: () => (/* binding */ e4),
+/* harmony export */   Root: () => (/* binding */ e5),
+/* harmony export */   createAvatarScope: () => (/* binding */ e6)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#Avatar`);
+
+const e1 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#AvatarFallback`);
+
+const e2 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#AvatarImage`);
+
+const e3 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#Fallback`);
+
+const e4 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#Image`);
+
+const e5 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#Root`);
+
+const e6 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/lns7_/Desktop/SAAS_Barbearia/node_modules/@radix-ui/react-avatar/dist/index.mjs#createAvatarScope`);
+
+
+/***/ }),
+
 /***/ "(rsc)/./node_modules/@radix-ui/react-slot/dist/index.mjs":
 /*!**********************************************************!*\
   !*** ./node_modules/@radix-ui/react-slot/dist/index.mjs ***!
