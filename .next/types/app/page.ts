@@ -1,4 +1,4 @@
-// File: C:\Users\Lucas\Desktop\SAAS_Barbearia\app\page.tsx
+// File: /Users/lns7_/Desktop/SAAS_Barbearia/app/page.tsx
 import * as entry from "../../../app/page.js"
 import type {
   ResolvingMetadata,
