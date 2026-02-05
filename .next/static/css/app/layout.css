@@ -719,9 +719,6 @@ video {
 .h-full {
   height: 100%;
 }
-.h-12 {
-  height: 3rem;
-}
 .max-h-\[110px\] {
   max-height: 110px;
 }
@@ -745,12 +742,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-\[250px\] {
-  width: 250px;
-}
-.w-12 {
-  width: 3rem;
 }
 .min-w-\[110px\] {
   min-width: 110px;
