@@ -1,12 +1,11 @@
-import { Input } from "@/app/_components/ui/input"
 import Image from "next/image"
 import Header from "./_components/header"
 import { Button } from "./_components/ui/button"
-import { SearchIcon } from "lucide-react"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./_components/barbershop-item"
 import { quickSearchList } from "./_constants/search"
 import BookingItem from "./_components/bookin-item"
+import Search from "./_components/search"
 
 const Home = async () => {
   //chamando o banco de dados
@@ -28,11 +27,8 @@ const Home = async () => {
         <p>Quarta-feira, 4 de Fevereiro.</p>
 
         {/*Barra de Busca*/}
-        <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Faça a sua busca..." />
-          <Button>
-            <SearchIcon />
-          </Button>
+        <div className="mt-6">
+          <Search />
         </div>
 
         {/*Busca Rápida*/}
