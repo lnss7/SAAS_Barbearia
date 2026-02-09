@@ -1,5 +1,22 @@
 {
-  "node": {},
+  "node": {
+    "906608d05506b57560c8c3cce6bbb30a94a322f1": {
+      "workers": {
+        "app/barbershops/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flns7_%2FDesktop%2FSAAS_Barbearia%2Fapp%2F_actions%2Fcreate-booking.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22createBooking%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/barbershops/[id]/page": "action-browser"
+      }
+    },
+    "bae5a6893e5ffc98b0390db95ab35dcd0a17dc0d": {
+      "workers": {
+        "app/barbershops/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flns7_%2FDesktop%2FSAAS_Barbearia%2Fapp%2F_actions%2Fcreate-booking.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22createBooking%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/barbershops/[id]/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "N0rh3WuF+Xtcmj6Y838GhCR/OGOrWzaoquVBta3AkLU="
+  "encryptionKey": "Ngkyp2AIeLPNzYPRBPTgMwW2R+eZG06Ag4wfZLosW/E="
 }
