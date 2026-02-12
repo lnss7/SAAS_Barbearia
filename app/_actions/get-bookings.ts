@@ -18,6 +18,4 @@ export const getBookings = ({ date }: GetBookingsProps) => {
             },
         }
     })
-
-    revalidatePath("/barbershops/[id]")
 }
