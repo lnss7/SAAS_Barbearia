@@ -9,6 +9,8 @@ import Search from "./_components/search"
 import Link from "next/link"
 import { getServerSession } from "next-auth"
 import { authOptions } from "./_lib/auth"
+import { format } from "date-fns"
+import { ptBR } from "date-fns/locale"
 
 const Home = async () => {
   const session = await getServerSession(authOptions)
@@ -38,6 +40,13 @@ const Home = async () => {
     }
   }) : []
 
+  const getDisplayName = () => {
+    if (!session?.user?.name) return "Bem Vindo";
+    const names = session.user.name.split(" ");
+    if (names.length === 1) return names[0];
+    return `${names[0]} ${names[names.length - 1]}`;
+  };
+
   return (
     <div>
       {/*Header*/}
@@ -45,8 +54,10 @@ const Home = async () => {
 
       {/*Texto*/}
       <div className="p-5">
-        <h2 className="text-xl font-bold"> Olá, Lucas!</h2>
-        <p>Quarta-feira, 4 de Fevereiro.</p>
+        <h2 className="text-xl font-bold"> Olá, {getDisplayName()}!</h2>
+        <p className="text-sm text-gray-400 capitalize">
+          {format(new Date(), "EEEE, d 'de' MMMM", { locale: ptBR })}
+        </p>
 
         {/*Barra de Busca*/}
         <div className="mt-6">
@@ -90,7 +101,7 @@ const Home = async () => {
           {confirmedBookings.length > 0 ? "Agendamentos" : "Nenhum agendamento confirmado"}
         </h2>
         <div className="flex overflow-x-auto gap-3 [&::-webkit-scrollbar]:hidden">
-          {confirmedBookings.map((booking) => ( 
+          {confirmedBookings.map((booking) => (
             <BookingItem key={booking.id} booking={booking} />
           ))}
         </div>
